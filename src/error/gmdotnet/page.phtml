@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title><?php echo $this->pageTitle?></title>
+<base href="<?php echo $this->getSkinUrl()?>" />
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="css/gmdotnetstyle.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <img id="logo" src="images/logo.png" class="img-responsive center-block" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <?php require_once $contentTemplate; ?>
+        </div>
+    </div>
+    <div class="row" id="contact">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4 text-center">
+            <h3>Contact Us</h3>
+            <p><strong><!-- STORE NAME --></strong></p>
+            <p><strong>Email:</strong> <a href="mailto:you@email"><!-- EMAIL CONTACT --></a></p>
+            <p><strong>Telephone:</strong> <!-- TELEPHONE NUMBER --></p>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center social-footer">
+            <a href="" title="" target="_blank"><span class='fa fa-facebook'></span></a>
+            <a href="" title="" target="_blank"><span class='fa fa-twitter'></span></a>
+            <a href="" title="" target="_blank"><span class='fa fa-google-plus'></span></a>
+            <a href="" title="" target="_blank"><span class='fa fa-instagram'></span></a>
+            <a href="" title="" target="_blank"><span class='fa fa-youtube'></span></a>
+            <a href="" title="" target="_blank"><span class='fa fa-pinterest'></span></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

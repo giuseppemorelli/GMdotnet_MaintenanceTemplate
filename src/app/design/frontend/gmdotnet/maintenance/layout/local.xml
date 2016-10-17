@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addCss"><stylesheet>css/bootstrap.min.css</stylesheet><params/></action>
+            <action method="addCss"><stylesheet>css/font-awesome.min.css</stylesheet><params/></action>
+            <action method="addCss"><stylesheet>css/gmdotnetstyle.css</stylesheet><params/></action>
+            <action method="addCss"><stylesheet>css/custom.css</stylesheet><params/></action>
+            <action method="addItem"><type>skin_js</type><name>js/jquery-1.11.3.min.js</name><params/></action>
+            <action method="addItem"><type>skin_js</type><name>js/bootstrap.min.js</name><params/></action>
+        </reference>
+        <reference name="root">
+            <block type="core/template" name="social-footer" as="social-footer" template="page/html/social-footer.phtml" />
+        </reference>
+    </default>
+</layout>

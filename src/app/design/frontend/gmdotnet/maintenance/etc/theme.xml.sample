@@ -1,0 +1,9 @@
+<!--
+Uncomment the file and clone in your custom package to create sub template
+-->
+<!--
+<?xml version="1.0"?>
+<theme>
+    <parent>gmdotnet/maintenance</parent>
+</theme>
+-->

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php echo $this->getChildHtml('head') ?>
+</head>
+<body>
+<div class="container-fluid">
+    <?php echo $this->getChildHtml('header') ?>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <?php echo $this->getChildHtml('content') ?>
+        </div>
+    </div>
+    <div class="row" id="contact">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4 text-center">
+            <h3><?php echo $this->__('Contact Us') ?></h3>
+            <p><strong><?php echo Mage::getStoreConfig('general/store_information/name') ?></strong></p>
+            <p><strong><?php echo $this->__('Email')?>:</strong> <a href="mailto:<?php echo Mage::getStoreConfig('trans_email/ident_general/email') ?>"><?php echo Mage::getStoreConfig('trans_email/ident_general/email') ?></a></p>
+            <p><strong><?php echo $this->__('Telephone')?>:</strong> <?php echo Mage::getStoreConfig('general/store_information/phone') ?></p>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+    <?php echo $this->getChildHtml('social-footer') ?>
+    <?php echo $this->getChildHtml('footer') ?>
+</div>
+</body>
+</html>
